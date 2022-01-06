@@ -36,19 +36,23 @@ class App extends React.Component {
   }
 
   MinusEvent(){
+    if(this.state.deCount <= 1){
+      return alert("Please Increase your number")
+    }
     this.setState({deCount : this.state.deCount -1})
     console.log("Decrement Function called" , this)
   }
+
   render() {
     return (
       <>
         <div className="bg-warning">
           {/* <FunProps name={"Halathi"} email={"Lundu"}/> */}
-          <img src={this.state.ImageUrl} alt="" />
+          {/* <img src={this.state.ImageUrl} alt="" /> */}
          
           <h1>{this.state.count}</h1>
-          <h1>{this.state.deCount}</h1>
-          {this.renderTags()}
+          {/* <h1>{this.state.deCount}</h1> */}
+          {/* {this.renderTags()} */}
           <button onClick={this.handleEvent}>Increase Number</button>
           <button onClick={this.MinusEvent}>Decrease Number</button>
         </div>

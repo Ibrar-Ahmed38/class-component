@@ -5,6 +5,12 @@ class App extends React.Component{
     return(
       <>
       <FunProps/>
+
+      <FunProps/>
+
+      <FunProps/>
+
+      <FunProps/>
       </>
     )
   }
