@@ -51,7 +51,7 @@ class App extends React.Component {
           {/* <img src={this.state.ImageUrl} alt="" /> */}
          
           <h1>{this.state.count}</h1>
-          {/* <h1>{this.state.deCount}</h1> */}
+          <h1>{this.state.deCount}</h1>
           {/* {this.renderTags()} */}
           <button onClick={this.handleEvent}>Increase Number</button>
           <button onClick={this.MinusEvent}>Decrease Number</button>
