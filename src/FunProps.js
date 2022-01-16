@@ -34,6 +34,8 @@ class App extends React.Component {
     this.setState({count : this.state.count + 1})
     console.log("Function Called", this)
   }
+            
+  
 
   MinusEvent(){
     if(this.state.deCount <= 1){
@@ -47,9 +49,10 @@ class App extends React.Component {
     return (
       <>
         <div className="bg-warning">
+   
           {/* <FunProps name={"Halathi"} email={"Lundu"}/> */}
           {/* <img src={this.state.ImageUrl} alt="" /> */}
-         
+
           <h1>{this.state.count}</h1>
           <h1>{this.state.deCount}</h1>
           {/* {this.renderTags()} */}
